@@ -12,7 +12,7 @@
             <field name="barcode" position="after">
                 <field
                     name="barcode_ids"
-                    attrs="{'invisible': [('product_variant_count', '>', 1)]}"
+                    invisible='product_variant_count > 1'
                 >
                     <tree editable="bottom">
                         <field name="sequence" widget="handle" />
